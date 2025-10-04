@@ -55,7 +55,7 @@ func main() {
 	for _, v := range trainings {
 		trainingInfo, err := spentcalories.TrainingInfo(v, weight, height)
 		if err != nil {
-			log.Printf("не получилось получить информацию о тренировке: %v", err)
+			log.Printf("Не получилось получить информацию о тренировке: %v", err)
 			continue
 		}
 		trainingLog = append(trainingLog, trainingInfo)
